@@ -1,0 +1,167 @@
+﻿@*<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Example user</strong>
+                            </span> <span class="text-muted text-xs block">Example menu <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li class="@Html.IsSelected(action: "Index")">
+                <a href="@Url.Action("Index", "Home")"><i class="fa fa-laptop"></i> <span class="nav-label">Main page</span> </a>
+            </li>
+            <li class="@Html.IsSelected(action: "Minor")">
+                <a href="@Url.Action("Minor", "Home")"><i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>*@
+<div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
+        <div class="dv-item-module ">
+            <div id="logo" class="logo-area">
+                <a href="http://05101.chilibusiness.net/index.php?route=common/home">
+                    <img src="http://05101.chilibusiness.net/image/catalog/05101/logo-sachhay.png" title="Cửa hàng sách" alt="Cửa hàng sách" class="img-responsive pull-left">
+                    <div class="logo-des">
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12">
+        <div class="dv-item-module ">
+            <div class="navbar navbar-inverse yamm menu_horizontal" id="menu_id_MB01">
+                <div class="navbar-header">
+                    <div class="text_title_nav"></div>
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-MB01" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar-collapse-MB01" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="">
+                                Trang chủ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://05101.chilibusiness.net/gioi-thieu.html">
+                                Giới thiệu
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Sản Phẩm <b class="caret"></b></a>
+                            <ul role="menu" class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/sach-doi-song">
+
+                                        Sách đời sống
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/sach-kinh-te">
+
+                                        Sách kinh tế
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/sach-van-hoc-nuoc-ngoai">
+
+                                        Sách văn học nước ngoài
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/sach-phat-trien-ban-than">
+
+                                        Sách phát triển bản thân
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="http://05101.chilibusiness.net/huong-dan.html">
+                                Hướng Dẫn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="?route=information/contact">
+                                Liên Hệ
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <!-- MOBILE MENU START -->
+                <div class="col-sm-12 mobile-menu-area">
+                    <div class="mobile-menu hidden-md hidden-lg" id="mob-menu" style="display: block;">
+                        <span class="mobile-menu-title"></span>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/gioi-thieu.html">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sản Phẩm</a>
+
+                                    <ul>
+                                        <li>
+                                            <a href="http://05101.chilibusiness.net/sach-doi-song">Sách đời sống</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://05101.chilibusiness.net/sach-kinh-te">Sách kinh tế</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://05101.chilibusiness.net/sach-van-hoc-nuoc-ngoai">Sách văn học nước ngoài</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://05101.chilibusiness.net/sach-phat-trien-ban-than">Sách phát triển bản thân</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://05101.chilibusiness.net/huong-dan.html">Hướng Dẫn</a>
+                                </li>
+                                <li>
+                                    <a href="?route=information/contact">Liên Hệ</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- MOBILE MENU END -->
+            </div>
+            <script>
+      $(function() {
+        window.prettyPrint && prettyPrint()
+        $(document).on('click', '.navbar .dropdown-menu', function(e) {
+          e.stopPropagation()
+        })
+      })
+            </script>
+        </div>
+    </div>
+</div>
